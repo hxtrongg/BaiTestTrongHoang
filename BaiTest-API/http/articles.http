@@ -1,0 +1,35 @@
+#Get All articles
+GET http://localhost:8080/api/v1/articles HTTP/1.1
+
+###
+
+#Get a articles by ID
+GET http://localhost:8080/api/v1/articles/(id) HTTP/1.1
+
+###
+
+## Creat a new articles
+POST http://localhost:8080/api/v1/articles HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Apple released OS 15 beta",
+    "keyword": "apple, os",
+    "description": "To day Apple released OS 15 beta",
+    "content": "In publishing and graphic design, Lorem ipsum is a placeholder text",
+    "date": "2023-10-03"
+}
+
+###
+## Update a  articles by ID
+PATCH  http://localhost:8080/api/v1/articles/(id) HTTP/1.1
+content-type: application/json
+
+{
+
+}
+
+###
+## DELETE a  articles by ID
+DELETE   http://localhost:8080/api/v1/articles/(id) HTTP/1.1
+content-type: application/json
